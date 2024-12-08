@@ -43,8 +43,8 @@ async def text_recipe(message):
 @dp.message_handler(commands=['start'])
 async def command_start(message):
     await message.answer('Привет! Я бот помогающий вашему здоровью.')
-    await message.answer('    Нажмите - /1, если вы хотите воспользоваться народныим рецептом')
-    await message.answer('    Нажмите - /2, если вы хотите воспользоваться советом врача')
+    await message.answer('    Введите - /1, если вы хотите воспользоваться народныим рецептом')
+    await message.answer('    Введите - /2, если вы хотите воспользоваться советом врача')
 
 
 @dp.message_handler()
