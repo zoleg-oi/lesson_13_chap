@@ -16,9 +16,11 @@ async def text_message(message: types.message):
         await message.answer('Это отклонение от пути')
         print('Это отклонение от пути')
 
+
 @dp.message_handler(commands=['start'])
 async def command_start(message):
     print('Привет! Я бот помогающий твоему здоровью.')
+
 
 @dp.message_handler()
 async def other_message(message):
